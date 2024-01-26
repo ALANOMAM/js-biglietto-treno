@@ -26,15 +26,21 @@ let age = prompt(`Ciao ${name} , inserisci la tua età`);
 
  if(age < 18){
      price = fullPrice - ((20/100) * fullPrice);
-     document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato è : "+price.toFixed(2);
+     document.getElementById("userAge").innerHTML = `${name} hai detto di avere ${age} anni`
+     document.getElementById("travelDistance").innerHTML = `vuoi percorrere ${distance} km`
+     document.getElementById("finalCost").innerHTML = "Giovanotto, visto la tua età hai 20% di sconto , il prezzo totale calcolato è quindi : "+price.toFixed(2)+" euro";
      console.log(price);
  } else if(age > 65){
     price = fullPrice - ((40/100) * fullPrice);
-    document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato è : "+price.toFixed(2);
+    document.getElementById("userAge").innerHTML = `Signore/a ${name} ha detto di avere ${age} anni`
+    document.getElementById("travelDistance").innerHTML = `vuole percorrere ${distance} km`
+    document.getElementById("finalCost").innerHTML = "La informiamo che ha 40% di sconto , il prezzo totale è quindi: "+price.toFixed(2)+" euro";
     console.log(price);
     
  } else{
    price = fullPrice;
-   document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato è : "+price.toFixed(2);
+   document.getElementById("userAge").innerHTML = `Signore/a ${name} ha detto di avere ${age} anni`
+    document.getElementById("travelDistance").innerHTML = `vuole percorrere ${distance} km`
+   document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato e pieno  è : "+price.toFixed(2)+" euro";
     console.log(price);
  }
