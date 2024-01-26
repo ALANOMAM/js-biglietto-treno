@@ -16,19 +16,22 @@ effettuare dei controlli per capire se l'utente ha inserito correttamente il num
 
  /*let age = prompt("Inserire l'età");
  let distance = prompt("inserire il numero di km");*/
-  let age = 30;
+  let age = 90;
   let distance = 200;
  let fullPrice = 0.21 * distance;
  let price;
 
  if(age < 18){
      price = fullPrice - ((20/100) * fullPrice);
+     document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato è : "+price.toFixed(2);
      console.log(price);
  } else if(age > 65){
     price = fullPrice - ((40/100) * fullPrice);
+    document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato è : "+price.toFixed(2);
     console.log(price);
     
  } else{
    price = fullPrice;
+   document.getElementById("finalCost").innerHTML = "Il prezzo totale calcolato è : "+price.toFixed(2);
     console.log(price);
  }
