@@ -13,13 +13,16 @@ effettuare dei controlli per capire se l'utente ha inserito correttamente il num
 
 */
 
-
- /*let age = prompt("Inserire l'età");
- let distance = prompt("inserire il numero di km");*/
-  let age = 90;
-  let distance = 200;
+let name = prompt("inserisci il tuo nome");
+let age = prompt(`Ciao ${name} , inserisci la tua età`); 
+ let distance = prompt(`Inserisci il numero di km che vuoi fare ${name}`);
+  
+ /*let age = 90;
+  let distance = 200;*/
  let fullPrice = 0.21 * distance;
  let price;
+
+
 
  if(age < 18){
      price = fullPrice - ((20/100) * fullPrice);
