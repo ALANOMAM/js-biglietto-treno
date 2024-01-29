@@ -2,12 +2,7 @@
 in gradi Celsius e la converte in Fahrenheit, tramite una ricerca su 
 internet potrete trovare la formula corretta per effettuare la conversione. Visualizza la temperatura convertita.*/ 
 
- /* let tempCelsuis = prompt("Ciao, dammi la temperatura in gradi celsuis");
-
-
- */
-
- let tempCelsuis = 45;
+ let tempCelsuis = prompt("Ciao, dammi la temperatura in gradi celsuis");
  let tempFahrenheit = tempCelsuis*(9/5)+32;
  
 
